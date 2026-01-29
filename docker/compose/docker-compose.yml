@@ -1,0 +1,10 @@
+services:
+  demo-api:
+    image: demo-api:latest
+    container_name: demo-api
+    build:
+      context: ../../
+      dockerfile: docker/Dockerfile
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
