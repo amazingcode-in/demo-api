@@ -15,7 +15,7 @@ public class DemoApiApplication {
 
     @GetMapping("/ping")
     public String status() {
-        return "Application is running!";
+        return "Application is running with new updates!";
     }
 
 }
